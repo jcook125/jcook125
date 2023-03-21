@@ -1,16 +1,42 @@
-### Hi there 👋
+## Jack Cook
+### MA Student, American University
 
-<!--
-**jcook125/jcook125** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm currently studying R programming language in American University's Global Governance, Politics, and Security graduate program. This page will serve as a portfolio of my data analytic work.
 
-Here are some ideas to get you started:
+### Skills
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+- Software
+  - `R/RStudio`
+  - Advanced Excel
+  
+  
+- Statistical Skills
+  - Regression Analysis
+  - Inference
+  
+  
+- Other Data Knowledge
+  - Mapping 
+  - `ggplot` visualizations
+
+
+### Programming Examples 
+
+Here's some code I wrote in `R`:
+
+```
+# Summary Table Function
+
+sumtable = function(.data, x){
+  x = enquo(x)
+  t(summarize(.data,
+            min = min(!!x, na.rm=T),
+            mean = mean(!!x, na.rm=T),
+            med = median(!!x, na.rm=T),
+            max = max(!!x, na.rm=T),
+            'NA' = sum(is.na(!!x)))) %>%
+    knitr::kable(digits = 1L) %>%
+    kableExtra::kable_styling("striped", font_size = 10)
+}
+```
