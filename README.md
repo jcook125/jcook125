@@ -27,4 +27,8 @@ I'm currently studying `R` programming language and `R Markdown` in American Uni
   - Mapping 
   - `ggplot` visualizations
 
+<div id="header" align="center">
+  <img src="[https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif](https://media.giphy.com/media/H7gdwW1UOWyRlVYpwt/giphy.gif)" width="100"/>
+</div>
+
 
